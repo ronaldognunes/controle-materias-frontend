@@ -1,0 +1,15 @@
+<div class="login">
+  <form class="login-form" (ngSubmit)="efetuarLogin()" [formGroup]="loginForm">
+    <h4>Efetuar Login</h4>
+    <div class="mb-3">
+      <input placeholder="Digite o email" type="email" class="form-control" id="email" aria-describedby="emailHelp" formControlName="email">
+    </div>
+    <div class="mb-3">
+      <input type="password" placeholder="senha" class="form-control" id="senha" formControlName="senha">
+    </div>
+    <div class="mb-1">
+      <a routerLink="#">Lembrar Senha</a>
+    </div>
+    <button type="submit" class="btn btn-primary">Entrar</button>
+  </form>
+</div>
